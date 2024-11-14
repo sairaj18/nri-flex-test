@@ -77,18 +77,33 @@
     },
     {
         "matchDatasources": [
-            "dockerfile",
-            "gomod"
+            "dockerfile"
         ],
         "matchPackageNames": [
             "golang"
         ],
         "matchPaths": [
-            "build/Dockerfile",
-            "go.mod"
+            "build/Dockerfile"
         ],
         "extractVersion": "^ARG GO_VERSION=(?<version>.*.*)$",
         "groupName": "go-updates"
+    },
+    {
+        "matchDatasources": [
+            "dockerfile"
+        ],
+        "matchPackageNames": [
+            "golang"
+        ],
+        "matchPaths": [
+            "build/Dockerfile"
+        ],
+        "matchUpdateTypes": [
+            "patch"
+        ],
+        "automerge": true,
+        "automergeType": "pr",
+        "pruneBranchAfterAutomerge": true
     },
     {
         // Group the Dockerfile go bump ("golang" package) and the go.mod go bump ("go" package) together
