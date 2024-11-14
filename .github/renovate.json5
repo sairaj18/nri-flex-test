@@ -89,7 +89,6 @@
         "go.mod"
       ],
       "extractVersion": "^ARG GO_VERSION=(?<version>.*)$",
-      "matchUpdateTypes": ["patch"],
       // Exclude any dependencies which are pre-1.0.0 because those can make breaking changes at any time
       // according to the SemVer spec.
       "matchCurrentVersion": "!/^(0|v0)/",
