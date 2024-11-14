@@ -96,7 +96,7 @@
       // Renovate will do the following when detecting a new dependency bump:
       "automerge": true,
       "automergeType": "pr",
-      "pruneBranchAfterAutomerge": true
+      "pruneBranchAfterAutomerge": true,
       "groupName": "go-updates"
     }
     {
