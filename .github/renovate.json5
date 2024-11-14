@@ -91,25 +91,6 @@
         "groupName": "go-updates"
     },
     {
-        "matchDatasources": [
-            "dockerfile",
-            "gomod"
-        ],
-        "matchPackageNames": [
-            "golang"
-        ],
-        "matchPaths": [
-            "build/Dockerfile",
-            "go.mod"
-        ],
-        "matchUpdateTypes": [
-            "patch"
-        ],
-        "automerge": true,
-        "automergeType": "pr",
-        "pruneBranchAfterAutomerge": true
-    },
-    {
         // Group the Dockerfile go bump ("golang" package) and the go.mod go bump ("go" package) together
         // check <https://docs.renovatebot.com/configuration-options/#groupname> for details about grouping.
         "matchPackageNames": ["golang", "go"],
