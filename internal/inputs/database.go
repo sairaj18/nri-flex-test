@@ -30,7 +30,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"          //mysql
 	_ "github.com/lib/pq"                       //postgres
 	_ "github.com/newrelic-experimental/go-ase" //Sybases
-	_ "github.com/sijms/go-ora/v2"              //Oracle
+	_ "github.com/sijms/go-ora/v3"              //Oracle
 	vertigo "github.com/vertica/vertica-sql-go" //HP Vertica
 	//
 )
