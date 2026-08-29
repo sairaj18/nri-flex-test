@@ -1,12 +1,12 @@
 module github.com/newrelic/nri-flex
 
-go 1.22.9
+go 1.26
 
 require (
 	github.com/Knetic/govaluate v3.0.0+incompatible
 	github.com/MonetDB/MonetDB-Go v1.1.0
 	github.com/SAP/go-hdb v0.107.3
-	github.com/aws/aws-lambda-go v1.47.0
+	github.com/aws/aws-lambda-go v1.55.0
 	github.com/aws/aws-sdk-go v1.55.5
 	github.com/basgys/goxml2json v1.1.0
 	github.com/denisenkom/go-mssqldb v0.12.3
